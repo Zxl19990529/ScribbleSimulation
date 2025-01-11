@@ -3,11 +3,51 @@ This repository is created for reimplementation of the ScribbleCOCO and Scribble
 
 ## ScribbleCOCO
 The complete dataset is avaliable at [BaiduNetdisk](https://pan.baidu.com/s/1bTRDR9BqDyaLcfynN2bpvg). The code is t817.
-![ScribbleCOCO_vis](imgs/ScribbleCOCO_vis.png)
-
+The ScribbleCOCO need at leat 24G space. The dataset is recommended to untar with the following structure:
+```bash
+ScribbleCOCO/
+├── ImageSets/SegmentationAug
+    ├──train.txt
+    └──val.txt
+├── coco2014_train_scribble_r1(The scribble masks, png files, about 923M.)
+├── coco2014_train_scribble_r2
+├── coco2014_train_scribble_r3
+├── JPEGImages (The jpeg image files, about 19G)
+└── SegmentationClassAug  (The ground truth masks, png files, about 1.1G)
+(The followings are Optional)
+├── pseudolabels (4.8G in total.)
+    ├── toco (Pseudo label masks frome the original ToCo, png files, about 429M)
+    ├── toco_r1 (Pseudo label masks from our scribble-promoted ToCo, png files, about 441M)
+    ├── toco_r2
+    ├── toco_r3
+    ├── cutmix (Pseudo labels masks from the Cutmix, png files, about 418M)
+    ├── has (Pseudo labels masks from the Has, png files, about 415m)
+    └── recam (Pseudo labels masks from the ReCam, png files, about 360m)
+├── scribble_dsmp (Distance maps of the scribbles. About 176G, recommend to generate from the code.)
+└── pseudolabel_dsmp (Distance maps of the pseudo labels. About 160G, recommend to generate from the code.)
+```
+![ScribbleCOCO_vis](imgs/ScribbleCOCO_vis.png).
 ## ScribbleCityscapes
 The complete dataset is available at [BaiduNetdisk](https://pan.baidu.com/s/1JDQkz211eXu_tzqlNw4stQ?pwd=hu5p). The code is hu5p.
-![ScribbleCityscapes_vis](imgs/ScribbleCityscapes.png)
+```bash
+ScribbleCityscapes/
+├── ImageSets/SegmentationAug
+    ├──train.txt
+    └──val.txt
+├── cityscapes_scribble_r1(The scribble masks, png files, about 74M.)
+├── cityscapes_scribble_r2
+├── cityscapes_scribble_r3
+├── JPEGImages (The jpeg image files, about 1.6G)
+└── SegmentationClassAug  (The ground truth masks, png files, about 171M)
+(The followings are Optional)
+├── pseudolabels (76M in total.)
+    ├── ToCoR1 (Pseudo label masks from our scribble-promoted ToCo, png files, about 26M)
+    ├── ToCoR2
+    └── ToCoR3
+├── scribble_dsmp (Distance maps of the scribbles. About 13G, recommend to generate from the code.)
+└── pseudolabel_dsmp (Distance maps of the pseudo labels. About 16G, recommend to generate from the code.)
+```
+![ScribbleCityscapes_vis](imgs/ScribbleCityscapes_vis.png)
 
 ## ScribbleSup and ScribbleACDC
 These two datasets are public datasets. 
