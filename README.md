@@ -1,8 +1,12 @@
 # ScribbleSimulation
 This repository is created for reimplementation of the ScribbleCOCO and ScribbleCityscapes. 
 
+## Terms of use
+- ScribbleCOCO: We follow the same license as [COCO dataset for images](https://cocodataset.org/#termsofuse). 
+- ScribbleCityscapes: We follow the same license as [The Cityscapes Dataset](https://github.com/mcordts/cityscapesScripts).
+- The datasets cannot be used for commercial purposes. The datasets are created for research purposes.
 ## ScribbleCOCO
-The complete dataset is avaliable at [BaiduNetdisk](https://pan.baidu.com/s/1bTRDR9BqDyaLcfynN2bpvg). The code is t817.
+The complete dataset is avaliable at [BaiduNetdisk](https://pan.baidu.com/s/1bTRDR9BqDyaLcfynN2bpvg).
 The ScribbleCOCO need at leat 24G space. The dataset is recommended to untar with the following structure:
 ```bash
 ScribbleCOCO/
@@ -27,8 +31,9 @@ ScribbleCOCO/
 └── pseudolabel_dsmp (Distance maps of the pseudo labels. About 160G, recommend to generate from the code.)
 ```
 ![ScribbleCOCO_vis](imgs/ScribbleCOCO_vis.png).
+
 ## ScribbleCityscapes
-The complete dataset is available at [BaiduNetdisk](https://pan.baidu.com/s/1JDQkz211eXu_tzqlNw4stQ?pwd=hu5p). The code is hu5p.
+The complete dataset is available at [BaiduNetdisk](https://pan.baidu.com/s/1JDQkz211eXu_tzqlNw4stQ).
 ```bash
 ScribbleCityscapes/
 ├── ImageSets/SegmentationAug
