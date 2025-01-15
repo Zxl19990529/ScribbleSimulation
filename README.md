@@ -33,7 +33,10 @@ ScribbleCOCO/
 ![ScribbleCOCO_vis](imgs/ScribbleCOCO_vis.png).
 
 ## ScribbleCityscapes
-The complete dataset is available at [BaiduNetdisk](https://pan.baidu.com/s/1JDQkz211eXu_tzqlNw4stQ?pwd=hu5p).
+
+> A COCO-style Cityscapes is avaliable at [BaiduNetdisk](https://pan.baidu.com/s/1_IBaNd4pagwIcIQ5jbxw2g?pwd=q61f).(preserved for furture open-sourced.)
+
+The complete dataset of ScribbleCityscapes is available at [BaiduNetdisk](https://pan.baidu.com/s/1JDQkz211eXu_tzqlNw4stQ?pwd=hu5p).
 ```bash
 ScribbleCityscapes/
 ├── ImageSets/SegmentationAug
