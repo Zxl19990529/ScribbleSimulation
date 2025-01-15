@@ -1,12 +1,12 @@
 # ScribbleSimulation
-This repository is created for reimplementation of the ScribbleCOCO and ScribbleCityscapes. 
+This repository is created for reimplementation of the ScribbleCOCO and ScribbleCityscapes. The codes are available at [BaiduNetdisk](https://pan.baidu.com/s/1iE5thVH_z_Xm7q_h7Bar6Q). The extraction code is in the paper.
 
 ## Terms of use
 - ScribbleCOCO: We follow the same license as [COCO dataset for images](https://cocodataset.org/#termsofuse). 
 - ScribbleCityscapes: We follow the same license as [The Cityscapes Dataset](https://github.com/mcordts/cityscapesScripts).
 - The datasets cannot be used for commercial purposes. The datasets are created for research purposes.
 ## ScribbleCOCO
-The complete dataset is avaliable at [BaiduNetdisk](https://pan.baidu.com/s/1bTRDR9BqDyaLcfynN2bpvg).
+The complete dataset is avaliable at [BaiduNetdisk](https://pan.baidu.com/s/1bTRDR9BqDyaLcfynN2bpvg?pwd=t817).
 The ScribbleCOCO need at leat 24G space. The dataset is recommended to untar with the following structure:
 ```bash
 ScribbleCOCO/
@@ -33,7 +33,7 @@ ScribbleCOCO/
 ![ScribbleCOCO_vis](imgs/ScribbleCOCO_vis.png).
 
 ## ScribbleCityscapes
-The complete dataset is available at [BaiduNetdisk](https://pan.baidu.com/s/1JDQkz211eXu_tzqlNw4stQ).
+The complete dataset is available at [BaiduNetdisk](https://pan.baidu.com/s/1JDQkz211eXu_tzqlNw4stQ?pwd=hu5p).
 ```bash
 ScribbleCityscapes/
 ├── ImageSets/SegmentationAug
@@ -53,6 +53,8 @@ ScribbleCityscapes/
 └── pseudolabel_dsmp (Distance maps of the pseudo labels. About 16G, recommend to generate from the code.)
 ```
 ![ScribbleCityscapes_vis](imgs/ScribbleCityscapes_vis.png)
+
+
 
 ## ScribbleSup and ScribbleACDC
 These two datasets are public datasets. 
