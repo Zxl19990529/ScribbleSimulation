@@ -5,7 +5,38 @@ This repository is created for reimplementation of the ScribbleCOCO and Scribble
 - ScribbleCOCO: We follow the same license as [COCO dataset for images](https://cocodataset.org/#termsofuse). 
 - ScribbleCityscapes: We follow the same license as [The Cityscapes Dataset](https://github.com/mcordts/cityscapesScripts).
 - The datasets cannot be used for commercial purposes. The datasets are created for research purposes.
-## ScribbleCOCO
+- 
+## Environment
+- python>=3.9
+- opencv-python
+- matplotlib
+- skimage
+- multiprocessing
+
+## Dataset preparation
+
+Download the COCO dataset from the [official webset](https://cocodataset.org/). 
+
+```bash
+dataset/COCO2014
+├── annotations
+├── test2014
+├── train2014
+└── val2014
+```
+## Example generating ScribbleCOCO
+Run with the script: ``generate_coco.sh`` to generate scribble masks 3 times with randomness.
+
+The allowed args are :
+```py
+parser.add_argument('--dataDir',default='./COCO2014',type=str)
+parser.add_argument('--dataType',default='train2014',type=str)
+parser.add_argument('--save_dir',default='./coco2014_train_scribble_random',type=str)
+parser.add_argument('--random',default='True',type=str,help='The generate the scribble with a random walk path, or chose the longest path as the scribble')
+parser.add_argument('--numworkers',default=1,type=int)
+```
+
+### ScribbleCOCO
 The complete dataset is avaliable at [BaiduNetdisk](https://pan.baidu.com/s/1bTRDR9BqDyaLcfynN2bpvg?pwd=t817).
 The ScribbleCOCO need at leat 24G space. The dataset is recommended to untar with the following structure:
 ```bash
@@ -34,8 +65,8 @@ ScribbleCOCO/
 
 ## ScribbleCityscapes
 
-> A COCO-style Cityscapes is avaliable at [BaiduNetdisk](https://pan.baidu.com/s/1_IBaNd4pagwIcIQ5jbxw2g?pwd=q61f).(preserved for furture open-sourced.)
-
+> A COCO-style Cityscapes is avaliable at [BaiduNetdisk](https://pan.baidu.com/s/1_IBaNd4pagwIcIQ5jbxw2g?pwd=q61f).~~(preserved for furture open-sourced.)~~
+Download the COCO-style Cityscapes ↑ 
 The complete dataset of ScribbleCityscapes is available at [BaiduNetdisk](https://pan.baidu.com/s/1JDQkz211eXu_tzqlNw4stQ?pwd=hu5p).
 ```bash
 ScribbleCityscapes/
@@ -65,5 +96,14 @@ These two datasets are public datasets.
 
 **ScribbleACDC**: The offical [ACDC](https://www.creatis.insa-lyon.fr/Challenge/acdc/) dataset is a 3D medical image segmentation for Automated Cardiac Diagnosis Challenge. Valvano et. al provided the human annotated [scribble annotations](https://vios-s.github.io/multiscale-adversarial-attention-gates/data) in 2021. I here recollected this data following PASCAL VOC format. The complete dataset is availiable at [BaiduNetdisk](https://pan.baidu.com/s/1LGdEIFyjjmPcsX8sIDDt8Q?pwd=4wtu). The code is 4wtu.
 
-
+## Citation
+If you found this repo is helpful, please cite:
+```bibtext
+@article{zhang2025exploiting,
+  title={Exploiting Inherent Class Label: Towards Robust Scribble Supervised Semantic Segmentation},
+  author={Zhang, Xinliang and Zhu, Lei and Zeng, Shuang and He, Hangzhou and Fu, Ourui and Yao, Zhengjian and Xie, Zhaoheng and Lu, Yanye},
+  journal={arXiv preprint arXiv:2503.13895},
+  year={2025}
+}
+```
 
