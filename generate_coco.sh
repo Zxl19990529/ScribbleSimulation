@@ -1,0 +1,3 @@
+python generate_scribble_frominstanceCOCO_random_mp.py --dataDir dataset/COCO2014/ --dataType train2014 --save_dir  coco2014_train_scribble_r1 --random True --numworkers 30;
+python generate_scribble_frominstanceCOCO_random_mp.py --dataDir dataset/COCO2014/ --dataType train2014 --save_dir  coco2014_train_scribble_r2 --random True --numworkers 30;
+python generate_scribble_frominstanceCOCO_random_mp.py --dataDir dataset/COCO2014/ --dataType train2014 --save_dir  coco2014_train_scribble_r3 --random True --numworkers 30;
