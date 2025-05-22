@@ -105,5 +105,14 @@ If you found this repo is helpful, please cite:
   journal={arXiv preprint arXiv:2503.13895},
   year={2025}
 }
+@inproceedings{zhang2024scribble,
+  title={Scribble hides class: Promoting scribble-based weakly-supervised semantic segmentation with its class label},
+  author={Zhang, Xinliang and Zhu, Lei and He, Hangzhou and Jin, Lujia and Lu, Yanye},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={7},
+  pages={7332--7340},
+  year={2024}
+}
 ```
 
